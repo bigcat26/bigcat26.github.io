@@ -38,9 +38,6 @@ jobs:
         hexo clean
         hexo generate
 
-    - name: Execute gulp task
-      run: gulp
-
     - name: Deploy hexo blog
       env: 
         GITHUB_REPO: github.com/yifanzheng/yifanzheng.github.io
