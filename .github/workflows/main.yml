@@ -23,7 +23,6 @@ jobs:
         node-version: '14.x'
 
     - name: Cache node modules
-      # 设置包缓存目录，避免每次下载
       uses: actions/cache@v1
       with:
         path: ~/.npm
@@ -31,7 +30,7 @@ jobs:
 
     - name: Install hexo dependencies
       run: |
-        npm install hexo-cli gulp -g
+        npm install hexo -g
         npm install
 
     - name: Generate files
