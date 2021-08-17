@@ -38,6 +38,11 @@ jobs:
         hexo clean
         hexo generate
 
+    - name: Update bangumi data
+      run: |
+ 	hexo cinema -u
+ 	hexo bangumi -u
+
     - name: Deploy hexo blog
       env: 
         GITHUB_REPO: github.com/bigcat26/bigcat26.github.io
