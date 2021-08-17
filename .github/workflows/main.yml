@@ -40,8 +40,8 @@ jobs:
 
     - name: Update bangumi data
       run: |
- 	hexo cinema -u
- 	hexo bangumi -u
+        hexo cinema -u
+        hexo bangumi -u
 
     - name: Deploy hexo blog
       env: 
