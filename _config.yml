@@ -103,3 +103,28 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+bangumi: # 追番设置
+  enable: true
+  path:
+  vmid:
+  title: '追番列表'
+  quote: '...'
+  show: 1
+  loading:
+  metaColor:
+  color:
+  webp:
+  progress:
+cinema: # 追剧设置
+  enable: true
+  path:
+  vmid:
+  title: '追番列表'
+  quote: '...'
+  show: 1
+  loading:
+  metaColor:
+  color:
+  webp:
+  progress:
