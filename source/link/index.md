@@ -5,19 +5,30 @@ type: "link"
 top_img: img/genshin_impact_bg.jpg
 ---
 
-# 编程
+# Design
 
-# 设计
+## Portfolio
 
-## 背景图
+- [花瓣网](https://huaban.com/)
+- [站酷](https://www.zcool.com.cn/)
+- [Dribbble](https://dribbble.com/)
+- [可画](https://www.canva.cn/)
 
-- http://bg-painter.com/：从一堆现成的背景图pattern选择一张，然后可以随机改变
+## Tools
+
+- [Figma](https://www.figma.com/)
+  - [Figma中文手册](https://figmachina.com/guide/)
+- [墨刀](https://modao.cc/)
+
+## Background
+
+- [bg-painter](http://bg-painter.com/)：从一堆现成的背景图pattern选择一张，然后可以随机改变
 - [Background Generator](https://bggenerator.com/)：背景图生成器，功能比较强大
 - [Cool Backgrounds](https://coolbackgrounds.io/)：背景图生成器，可选pattern没有Background Generator多
 - [觅元素](http://www.51yuansu.com/)：免抠元素、背景图下载，会员价格不贵，免费账号一天下载4张
 - https://patternizer.com/：生成格子背景图
 
-## 插画
+## Illustration
 
 - [PixelTrue矢量插画免费版](https://www.pixeltrue.com/free-illustrations)：13个免费的Illustrations pack
 - [undraw矢量插画](https://undraw.co/illustrations)：免费下载SVG或者PNG，可以改变颜色，风格较为商务较为统一，瀑布式加载无法搜索比较蛋疼
@@ -25,37 +36,34 @@ top_img: img/genshin_impact_bg.jpg
 - https://icons8.com/illustrations/style--delesign：部分免费插画，风格质量不一
 - https://www.humaaans.com/：免费人型插画，风格并非个人偏好的类型。。
 
-## 图标
+## Icon
 
 - [阿里巴巴图标网](https://www.iconfont.cn/)
-- ICONS8 https://icons8.cn/
-- Ikonate：https://ikonate.com/
-- iconstore：https://iconstore.co/
+- [iconstore](https://iconstore.co/)：各种品类的矢量图标，看起来适合练习黄金分割临摹
+- [Icons8.cn/igoutu.cn](https://igoutu.cn/): 除了图标还有移除背景、人脸生成、超分辨率等软件
+- [Ikonate](https://ikonate.com/): 一组矢量图标，可以在线调border粗细，大小，和颜色
 - icoon：https://icooon-mono.com/
 - iconfinder：https://www.iconfinder.com/
-
 - [FontAwesome中文网](http://www.fontawesome.com.cn/)
 
-## 配色
+## Color
 
-- [中国色彩](http://zhongguose.com/)
+- [中国色](http://zhongguose.com/)
+- [日本色](https://nipponcolors.com/)
 - [Adobe Color](https://color.adobe.com/zh/create/color-wheel)
 - [ColorDrop](https://www.colordrop.io/)
 - [ColorHex](https://www.colorhexa.com/)
 - [配色卡](https://peiseka.com/)
 - [优色](https://color.uisdc.com/)
-- https://nipponcolors.com/
 - https://www.shejidaren.com/examples/tools/color-scheme/
 - https://webgradients.com/
 - https://www.webdesignrankings.com/resources/lolcolors/
 - https://colorhunt.co/
 - https://uigradients.com/
-
 - https://colourco.de/
 
-  
 
-# 电子书
+# EBooks
 
 - [图灵社区](https://www.ituring.com.cn/)
 

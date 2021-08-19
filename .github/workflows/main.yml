@@ -33,15 +33,18 @@ jobs:
         npm install hexo -g
         npm install
 
-    - name: Generate files
+    - name: Clean
       run: |
         hexo clean
-        hexo generate
 
     - name: Update bangumi data
       run: |
         hexo cinema -u
         hexo bangumi -u
+
+    - name: Generate files
+      run: |
+        hexo generate
 
     - name: Deploy hexo blog
       env: 
