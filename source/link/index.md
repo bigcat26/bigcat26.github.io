@@ -46,6 +46,23 @@ top_img: img/genshin_impact_bg.jpg
 - iconfinder：https://www.iconfinder.com/
 - [FontAwesome中文网](http://www.fontawesome.com.cn/)
 
+## Pictures
+
+- pixabay：https://pixabay.com/zh/
+- Unsplash：https://unsplash.com/
+-  Pexels：https://www.pexels.com/zh-cn/
+-  Foodiesfeed ：https://www.foodiesfeed.com
+-  CC零图片网：https://cc0.cn/
+-  Logo神器：https://www.logosc.cn/so/
+
+## Templates
+
+- freepik：https://www.freepik.com/
+- free-PSD-templates：https://free-psd-templates.com/
+- 365psd：https://365psd.com/
+- pngimage：http://pngimg.com/
+- CleanPNG：https://www.cleanpng.com/
+
 ## Color
 
 - [中国色](http://zhongguose.com/)
@@ -62,6 +79,12 @@ top_img: img/genshin_impact_bg.jpg
 - https://uigradients.com/
 - https://colourco.de/
 
+## Font
+
+- 字由：https://www.hellofont.cn/
+
+- 100font：https://www.100font.com/
+
 
 # EBooks
 
@@ -75,4 +98,23 @@ top_img: img/genshin_impact_bg.jpg
 - [苦瓜书盘](https://kgbook.com/)
 
 - [静然书屋](https://books.andrewjr.wang/0:/)
+
+# Wallpaper
+
+- wallhaven：https://wallhaven.cc/
+- Wallpaper Abyss：https://wall.alphacoders.com/
+- 极简壁纸：https://bz.zzzmh.cn/
+
+# Audio
+
+- audionautix ：https://audionautix.com/
+- Freepd：https://freepd.com/
+- Freesound：https://freesound.org/
+- 耳聆网：https://www.ear0.com/
+- 淘声网：https://www.tosound.com/
+- https://www.lalal.ai/
+
+# ACG
+
+Anime Scene Snapshot Search: https://trace.moe/
 
