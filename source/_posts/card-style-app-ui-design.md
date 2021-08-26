@@ -1,7 +1,10 @@
 ---
 title: 卡片式风格App UI设计
 date: 2021-08-25 19:00:00
-tags: design app ui
+tags: 
+  - design
+  - app
+  - ui
 ---
 
 # 卡片式风格设计
