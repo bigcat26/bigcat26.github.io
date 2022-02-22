@@ -1630,7 +1630,7 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
-hexo-bilibili-bangumi@^1.6.0:
+hexo-bilibili-bangumi@^1.7.4:
   version "1.7.4"
   resolved "https://registry.yarnpkg.com/hexo-bilibili-bangumi/-/hexo-bilibili-bangumi-1.7.4.tgz#69720607d587dd72aea0609f4a7ec8cd963ecb11"
   integrity sha512-GFysQ3DG856A1QC7j0fK1vY1y1FtiOp6rBJo52AlLHiDPlO94RHIFVtsG5cqKWNON/+UH2uNdJrETuhszVwWDw==
