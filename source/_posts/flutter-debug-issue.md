@@ -40,3 +40,4 @@ flutter run -d chrome --web-port=8080 --web-hostname= *the value of IPv4 Address
 
 1. 去掉网卡IPv6，按理说ok，但我没试
 2. 改debug configuration，加additional run args：`--web-port=8080 --web-hostname=127.0.0.1`。我用的是这个方法，works。
+
