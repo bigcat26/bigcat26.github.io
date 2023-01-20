@@ -10,6 +10,32 @@ tags:
 
 来源B站的DR.CAN的视频
 
+## 概念
+
+### 协方差 covariance
+
+$cov_{x,y}=\frac{\sum(x_{i}-\bar{x})(y_{i}-\bar{y})}{N-1}$
+
+- $cov_{x,y}$	=	covariance between variable x and y
+- $x_{i}$	=	data value of x
+- $y_{i}$	=	data value of y
+- $\bar{x}$	=	mean of x
+- $\bar{y}$	=	mean of y
+- $N$	=	number of data values
+
+协方差在概率论和统计学中用于衡量两个变量的总体误差。**而方差是协方差的一种特殊情况，即当两个变量是相同的情况**。协方差表示的是两个变量的总体的误差，这与只表示一个变量误差的方差不同。
+
+### 方差 variance
+
+$S^{2} = \frac{\sum (x_i - \bar{x}) ^2}{n - 1}$
+
+- $S^2$	=	sample variance
+- $x_i$	=	the value of the one observation
+- $\bar{x}$	=	the mean value of all observations
+- $n$	=	the number of observations
+
+方差是在概率论和统计方差衡量随机变量或一组数据时离散程度的度量。 概率论中方差用来度量随机变量和其数学期望（即均值）之间的偏离程度。 统计中的方差（样本方差）是每个样本值与全体样本值的平均数之差的平方值的平均数。
+
 ## 公式
 
 ![Formula](/img/kalman-filter-formula.png)
@@ -50,7 +76,7 @@ ${e}_{MEA}$一般由测量工具得出（传感器等）
 
 ## Python代码
 
-这里偷懒假设e_measurement不跟随k而变化
+这里假设e_measurement不跟随k而变化
 
 ```python
 import numpy as np
