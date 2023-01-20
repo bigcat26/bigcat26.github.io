@@ -4,11 +4,12 @@ date: 2023-01-20 02:38:00
 tags: 
   - control system
   - cybernetic
+  - kalman filter
 ---
 
 # Kalman filter笔记1
 
-来源B站的DR.CAN的视频
+参考B站B站的DR.CAN的视频: [【卡尔曼滤波器】_Kalman Filter_全网最详细数学推导](https://space.bilibili.com/230105574/channel/collectiondetail?sid=6939)
 
 ## 概念
 
