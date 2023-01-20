@@ -85,3 +85,23 @@ aside:
     post_count: true
     last_push_date: true
     sort_order: # Don't modify the setting unless you know how it works
+
+
+# Math Equations Render Support
+math:
+  enable: true
+  per_page: false
+  #engine: mathjax
+  engine: katex
+  katex:
+    # Use 0.7.1 as default, jsdelivr as default CDN, works everywhere even in China
+    cdn: //cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css
+    #cdn: //cdn.jsdelivr.net/npm/katex@0.7.1/dist/katex.min.css
+    # CDNJS, provided by cloudflare, maybe the best CDN, but not works in China
+    #cdn: //cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css
+
+    copy_tex:
+      # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
+      enable: true
+      copy_tex_js: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.js
+      copy_tex_css: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.css
