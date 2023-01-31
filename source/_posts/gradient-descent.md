@@ -17,7 +17,7 @@ tags:
 
 首先确定拟合曲线的函数是怎样的，这里用N元N次方程：
 
-$y(w_0,w_1...w_j) = w_0 + w_1 x + w_2 x^2 ... + w_j x^j $
+$y(w_0,w_1...w_j) = w_0 + w_1 x + w_2 x^2 ... + w_j x^j$
 
 然后，确定使用最小二乘损失函数：
 
@@ -76,7 +76,7 @@ plt.legend()
 plt.show()
 ```
 
-![Sample](/img/gd-sample.png)
+![Sample](/img/gd_sample.png)
 
 以上散点是要拟合的曲线的输入样本。
 
@@ -148,4 +148,4 @@ epoch:9000 loss:7813.294297301407
 
 图像：
 
-![Result](/img/gd-curvefit.png)
+![Result](/img/gd_curvefit.png)
