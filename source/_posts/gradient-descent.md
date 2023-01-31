@@ -122,6 +122,7 @@ for i in range(epochs):
 result_y = np.polyval(weights, ground_truth_x)
 
 plt.scatter(ground_truth_x, ground_truth_y_noise, label='sample')
+plt.plot(ground_truth_x, ground_truth_y, label='origin')
 plt.plot(ground_truth_x, result_y, label='result')
 plt.legend()
 plt.show()
@@ -130,21 +131,21 @@ plt.show()
 输出结果:
 
 ```text
-epoch:0 loss:224137.58528031068
-epoch:1000 loss:7817.904451520894
-epoch:2000 loss:7816.040577617981
-epoch:3000 loss:7815.629924575401
-epoch:4000 loss:7815.225656784621
-epoch:5000 loss:7814.82757311734
-epoch:6000 loss:7814.435531941864
-epoch:7000 loss:7814.049395009907
-epoch:8000 loss:7813.669027372575
-epoch:9000 loss:7813.294297301407
+epoch:0 loss:873603.4097810199
+epoch:1000 loss:3316.4481094125726
+epoch:2000 loss:3313.4402820033943
+epoch:3000 loss:3312.0804748041433
+epoch:4000 loss:3310.724517130056
+epoch:5000 loss:3309.372307816155
+epoch:6000 loss:3308.0238104382984
+epoch:7000 loss:3306.6789893506993
+epoch:8000 loss:3305.337809662464
+epoch:9000 loss:3304.0002372196905
 ```
 
 可以看到其实在第1000个epoch, loss就不怎么降了, 还是强行跑了10k个。
 
-最终输出的权重：array([2.09759084, 4.49785889, 1.57035344, 1.76617769])
+最终输出的权重：array([2.12371171, 3.71908694, 1.83210565, 0.07659884])
 
 图像：
 
