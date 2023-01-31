@@ -7,9 +7,13 @@ tags:
   - kalman filter
 ---
 
-# Kalman filter笔记1
+# Kalman filter笔记(未完成)
 
 参考B站B站的DR.CAN的视频: [【卡尔曼滤波器】_Kalman Filter_全网最详细数学推导](https://space.bilibili.com/230105574/channel/collectiondetail?sid=6939)
+
+## 前言
+
+本文纯属笔记，且未完成，不具参考性。
 
 ## 概念
 
