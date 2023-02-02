@@ -15,41 +15,51 @@ tags:
 
 ## 原理
 
-首先确定拟合曲线的函数是怎样的，这里用一元J次方程：
+首先确定拟合曲线的函数是怎样的，这里用一元k次方程：
 
-$y(w_0,w_1...w_j) = w_0 + w_1 x + w_2 x^2 ... + w_j x^j$
+$y(w_0,w_1...w_k) = w_0 + w_1 x + w_2 x^2 ... + w_k x^k = \sum_{n=0}^{k} {w_n}{x^n}$
 
 然后，确定使用最小二乘损失函数：
 
-$L = \sum_{i=0}^{j} \frac{1}{2} (\hat{y_i} - 𝑦_i) ^ 2$
+$L = \sum_{i=0}^{j} \frac{1}{2j} (\hat{y_i} - 𝑦_i) ^ 2$
 
 这里的$\hat{y}$是观测值, $y_i$是理论值(ground truth)，$j$是一次迭代的样本个数。
 
 梯度下降优化，就是对loss函数的每一个w权重分量分别计算梯度，然后每次迭代更新一次梯度。
 
-对于每个w权重的梯度，也就是每个w的偏导数，计算公式是：$\frac{dL}{dw_k}$
+对于每个w权重的梯度，也就是每个$w_g$的偏导数，计算公式是：$\frac{d}{dw_g}L = \frac{d}{dw_g}\sum_{i=0}^{j} \frac{1}{2j} (\hat{y_i} - 𝑦_i) ^ 2$
 
-这里可以使用链式法则，设$a = \frac{1}{2} (\hat{y} - 𝑦) ^ 2$
+这里以$k = 2$, g为1和2的情况为例展开推导，首先算出$(\hat{y} - y)^2 = $
 
-则 $\frac{dL}{dw_k}$ = $\frac{dL}{da} * \frac{da}{dw_k}$
+$( w_0^2 + w_0w_1x + w0w_2^2 - w_0y$
 
-$\frac{dL}{da} = 2a$
+$+ w_0w_1x + w_1^2x^2 + w_1w_2x^3 - w_1xy$
 
-$\frac{da}{dw_k} = \frac{d}{dw_k} \frac{1}{2} (\sum_{j=0}^{n} w_j x^j - y) = x^k (\sum_{i=0}^{j} w_ix^i - y)$
+$+ w_0w_2x^2 + w_1w_2x^3 + w_2^2x^4 - w_2x^2y$
 
-这里以$k = 2$为例展开推导:
+$- w_0y - w_1xy - w_2x^2y + y^2)$
 
-$\frac{da}{dw_2} = \frac{1}{2} (2w_0x^2 + 2w_1x^3 +2w_2x^4 - 2x^2y) = x^2(w_0 + w_1x + w_2x^2 - y)$
+对$w_1$求导后, 得: 
 
-最终得$\frac{dL}{dw_k} = 2x^k (\sum_{i=0}^{j} w_ix^i - y_i)$
+$= (w_0x + w_0x + 2w_1x^2 + w_2x^3 - xy + w_2x^3 - xy)$
 
-因此对于每次batch size为$b$的迭代权重$w_k$的梯度为:
+$= (2w_0x + 2w_1x^2 + 2w_2x^3 - 2xy)$
 
-$gradient(w_k) = \sum_{i=1}^{b}  x_i^k (\sum_{j=0}^{n} w_j x_i^j - y_i)$
+$= 2x(w_0 + w_1x + w_2x^2 - y)$
+
+对$w_2$求导后, 得: 
+
+$= 2x^2(w_0 + w_1x + w_2x^2 - y)$
+
+所以 $\frac{d}{dw_g}L = x^g(\sum_{n=0}^{k} {w_n}{x^n} - y)$
+
+对于每次迭代权重$w_k$的梯度为:
+
+$gradient(w_g) = \sum_{i=1}^{j} \frac{1}{j} x^g(\sum_{n=0}^{k} {w_n}{x^n} - y)$
 
 下面就是权重更新的公式：
 
-$w_k = w_k - \epsilon \frac{dL}{d w_k}$
+$w_k = w_k - \epsilon \frac{dL}{d w_g}$
 
 其中 $\epsilon$ 为学习率。
 
@@ -62,18 +72,12 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
-# 假设曲线方程 2x^3 + 4x^2 + 7x + 1
-ground_truth_coeff = [2, 4, 7, 2]
-
-ground_truth_x = np.linspace(-10, 10, 21)
-ground_truth_y = np.polyval(ground_truth_coeff, ground_truth_x)
+# -3x^3 + 2x^2 + -4x + 2
+ground_truth_w = [-3, 2, -4, 2]
+ground_truth_x = np.arange(-5, 4, 0.5)
+ground_truth_y = np.polyval(ground_truth_w, ground_truth_x)
 # 加噪音
-ground_truth_y_noise = [y + np.random.randn() * 100 for y in ground_truth_y]
-
-plt.plot(ground_truth_x, ground_truth_y, label='function curve')
-plt.scatter(ground_truth_x, y=ground_truth_y_noise, label='sample with noise')
-plt.legend()
-plt.show()
+ground_truth_y_noise = [y + np.random.randn() * 30 for y in ground_truth_y]
 ```
 
 ![Sample](/img/gd_sample.png)
@@ -87,66 +91,57 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
-# 学习率
-eps = 0.0000001
-# 迭代次数
-epochs = 10000
 # 没做SGD, 每次使用所有样本计算梯度
 batch_size = len(ground_truth_y)
-# 随机初始化系数权重
-weights = np.random.randn(4)
+# 学习率
+eps = [0.0001, 0.0001, 0.0001]
+# 随机初始化系数权重, 权重个数-1即为N次方的N
+# weights = [np.random.randn(4), np.random.randn(3), np.random.randn(2)]
+weights = [np.zeros(4), np.zeros(3), np.zeros(2)]
+# 迭代次数
+epochs = [2000, 2000, 2000]
 
-def evaluate_loss(weights, x, y):
+def evaluate_loss(x, y, weights):
     s = 0
-    bs = len(x)
+    bs = len(y)
     for i in range(bs):
         s = s + (np.polyval(weights, x[i]) - y[i]) ** 2
     return s / bs;
 
-def evaluate_gradient(x, y, weights):
+def evaluate_gradient(x, y, weights, epsilon):
     power = len(weights)
     for g in range(len(weights)):
-        p = 0
         gradient = 0
         for i in range(batch_size):
-            gradient += (x[i] ** (power - 1 - g)) * (np.polyval(weights, x[i]) - y[i])
-        weights[g] = weights[g] - eps * gradient
-    
-for i in range(epochs):
-    evaluate_gradient(ground_truth_x, ground_truth_y_noise, weights)
-    if i % 1000 == 0:
-        loss = evaluate_loss(weights, ground_truth_x, ground_truth_y_noise)
-        print(f'epoch:{i} loss:{loss}')
+            gradient += x[i] ** (power - 1 - g) * (np.polyval(weights, x[i]) - y[i]) / batch_size
+        weights[g] = weights[g] - epsilon * gradient
         
-# 画图
-result_y = np.polyval(weights, ground_truth_x)
+def fit_curve(x, y, weights, epochs, epsilon):
+    for i in range(epochs):
+        evaluate_gradient(x, y, weights, epsilon)
+        if i % 100 == 0:
+            loss = evaluate_loss(x, y, weights)
+            print(f'epoch:{i:8} loss:{loss:.4f}')
 
-plt.scatter(ground_truth_x, ground_truth_y_noise, label='sample')
-plt.plot(ground_truth_x, ground_truth_y, label='origin')
-plt.plot(ground_truth_x, result_y, label='result')
-plt.legend()
-plt.show()
+for i in range(len(weights)):
+    fit_curve(ground_truth_x, ground_truth_y_noise, weights[i], epochs[i], eps[i])
+
 ```
 
-输出结果:
-
-```text
-epoch:0 loss:873603.4097810199
-epoch:1000 loss:3316.4481094125726
-epoch:2000 loss:3313.4402820033943
-epoch:3000 loss:3312.0804748041433
-epoch:4000 loss:3310.724517130056
-epoch:5000 loss:3309.372307816155
-epoch:6000 loss:3308.0238104382984
-epoch:7000 loss:3306.6789893506993
-epoch:8000 loss:3305.337809662464
-epoch:9000 loss:3304.0002372196905
-```
-
-可以看到其实在第1000个epoch, loss就不怎么降了, 还是强行跑了10k个。
-
-最终输出的权重：array([2.12371171, 3.71908694, 1.83210565, 0.07659884])
-
-图像：
+输出图像：
 
 ![Result](/img/gd_curvefit.png)
+
+## 常见问题
+
+### 训练出现nan
+
+学习率太大, 样本数据y值太大
+
+### loss降不下来
+
+loss下降很小说明优化空间已经不大了, 不会降到1以下的
+
+### 拟合不收敛
+
+可能之一是gradient算错了，比如`x[i]`的指数算错，或者weights的顺序没对应上之类。
