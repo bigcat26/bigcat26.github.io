@@ -80,9 +80,9 @@ Python相关
 
 ## Spearman秩相关系数
 
-TODO
+TODO... (主要解决皮尔逊系数容易受到异常值的的影响的问题)
 
-## Kendall秩相关系数
+## Kendall τ秩相关系数
 
 TODO
 
