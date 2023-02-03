@@ -73,6 +73,11 @@ Python相关
 
 - [scipy.stats.pearsonr](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html)
 
+应用：
+
+- 金融分析: 继续指数、股票、基金等相关性
+- 推荐系统: User-based协同过滤
+
 ## Spearman秩相关系数
 
 TODO
