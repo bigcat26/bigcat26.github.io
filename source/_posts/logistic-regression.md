@@ -1,6 +1,6 @@
 ---
 title: 逻辑回归整理
-date: 2023-02-01 00:00:08
+date: 2023-02-10 00:00:08
 tags: 
   - gradient descent
   - logistic regression
