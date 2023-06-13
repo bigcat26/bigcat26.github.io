@@ -1530,10 +1530,10 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
-hexo-bilibili-bangumi@^1.8.6:
-  version "1.8.6"
-  resolved "https://registry.yarnpkg.com/hexo-bilibili-bangumi/-/hexo-bilibili-bangumi-1.8.6.tgz#9bb70036a51f5fbae572f6ccfe67257c9604d4fa"
-  integrity sha512-M1Ak3L+gwrYo4FvIX+7FDuOWAQkEpx6LGsEiKvzG+tH1bCcAs6p+wl6v9aJdmHQmhC0I7e4PMrJt/GjYfaDqkA==
+hexo-bilibili-bangumi@^1.8.8:
+  version "1.8.8"
+  resolved "https://registry.yarnpkg.com/hexo-bilibili-bangumi/-/hexo-bilibili-bangumi-1.8.8.tgz#84984dbaa98ad4e8da9151a8acc58d7c9288c475"
+  integrity sha512-XaWV0Iq0JkJgRUKGsXG4xnyR5dYEbANbHfSUXiD8AWQYY9RN/JznGncb/FXxFGPyJwu+gqoq1Y6Sre7QlIBD4w==
   dependencies:
     "@babel/runtime" "^7.18.0"
     axios "^1.0.0"
