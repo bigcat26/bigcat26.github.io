@@ -1,7 +1,7 @@
 ---
 title: 记第一次LoRA训练
 date: 2023-08-13 02:00:00
-cover: /img/training-vicuna-lora-cover.png
+cover: /img/training-vicuna-lora-cover.jpg
 tags: 
   - LLM
   - vicuna
