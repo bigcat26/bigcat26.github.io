@@ -3,9 +3,9 @@
 
 
 "@adobe/css-tools@^4.0.1":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@adobe/css-tools/-/css-tools-4.2.0.tgz#e1a84fca468f4b337816fcb7f0964beb620ba855"
-  integrity sha512-E09FiIft46CmH5Qnjb0wsW54/YQd69LsxeKUOWawmws1XWvyFGURnAChH0mlr7YPFR1ofwvUQfcL0J3lMxXqPA==
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@adobe/css-tools/-/css-tools-4.3.1.tgz#abfccb8ca78075a2b6187345c26243c1a0842f28"
+  integrity sha512-/62yikz7NLScCGAAST5SHdnjaDJQBDq0M2muyRTpf2VQhw6StBg2ALiu73zSJQ4fMVLA+0uBhBHAle7Wg+2kSg==
 
 "@babel/helper-validator-identifier@^7.14.9":
   version "7.14.9"
@@ -1554,10 +1554,10 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
-hexo-bilibili-bangumi@^1.8.8:
-  version "1.8.8"
-  resolved "https://registry.yarnpkg.com/hexo-bilibili-bangumi/-/hexo-bilibili-bangumi-1.8.8.tgz#84984dbaa98ad4e8da9151a8acc58d7c9288c475"
-  integrity sha512-XaWV0Iq0JkJgRUKGsXG4xnyR5dYEbANbHfSUXiD8AWQYY9RN/JznGncb/FXxFGPyJwu+gqoq1Y6Sre7QlIBD4w==
+hexo-bilibili-bangumi@^1.8.9:
+  version "1.8.9"
+  resolved "https://registry.yarnpkg.com/hexo-bilibili-bangumi/-/hexo-bilibili-bangumi-1.8.9.tgz#5cb6571bd00b2bd9cc0a53c3b1e48487e75a797a"
+  integrity sha512-sn/IO5jE4DDnFoN56sp7Yup36H2GPsHslZQTSWl7ROJnwLfgkKHtHfO/A7yd1H//s39kuXZcAEP/x/EjJ9yHWw==
   dependencies:
     "@babel/runtime" "^7.18.0"
     axios "^1.0.0"
