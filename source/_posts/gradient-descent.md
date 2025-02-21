@@ -4,7 +4,9 @@ date: 2023-02-01 00:00:08
 tags: 
   - gradient descent
   - least square method
-
+categories:
+  - 技术
+  - 深度学习
 ---
 
 # 梯度下降拟合曲线

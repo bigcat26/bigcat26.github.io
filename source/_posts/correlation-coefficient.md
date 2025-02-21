@@ -4,6 +4,9 @@ date: 2023-02-04 02:29:00
 tags: 
   - covariance
   - pearson
+categories:
+  - 设计
+  - UI/UX
 ---
 
 # 相关性系数笔记

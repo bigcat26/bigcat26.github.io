@@ -6,6 +6,9 @@ tags:
   - kotlin
   - grpc
   - protobuf
+categories:
+  - 技术
+  - Android
 ---
 
 # Android Kotlin使用gRPC记录

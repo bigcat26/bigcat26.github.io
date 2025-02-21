@@ -7,6 +7,9 @@ tags:
   - pytorch
   - dl
   - yolo
+catagories:
+  - 技术
+  - 深度学习
 ---
 
 # Learning Deep Learning
