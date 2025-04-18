@@ -1,6 +1,8 @@
 ---
 title: 记录旧笔记本数据迁移过程
 date: 2025-03-27
+top_img: /img/notebook.jpg
+cover: /img/notebook.jpg
 tags:
   - 笔记本
 categories:
