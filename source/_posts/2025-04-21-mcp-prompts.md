@@ -1,6 +1,6 @@
 ---
 title: 整理一下mcp和prompts相关的资料
-date: 2025-04-10
+date: 2025-04-21
 top_img: /img/mcp.jpg
 cover: /img/mcp.jpg
 tags: 
