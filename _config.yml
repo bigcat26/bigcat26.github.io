@@ -99,6 +99,10 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: butterfly
 
+avatar:
+  img: /img/avatar.jpg
+  effect: false
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
