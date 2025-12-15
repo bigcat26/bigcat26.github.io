@@ -1040,7 +1040,7 @@ ee-first@1.1.1:
   resolved "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
-ejs@3.1.10, ejs@^3.1.6:
+ejs@^3.1.6:
   version "3.1.10"
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-3.1.10.tgz#69ab8358b14e896f80cc39e62087b88500c3ac3b"
   integrity sha512-UeJmFfOrAQS8OJWPZ4qtgHyWExa088/MtK5UEyoJGFH67cDEXkZSviOiKRCZ4Xij0zxI3JECgYs3oKx+AizQBA==
@@ -1627,20 +1627,20 @@ hasown@^2.0.2:
   dependencies:
     function-bind "^1.1.2"
 
-hexo-bilibili-bangumi@^1.11.1:
-  version "1.11.1"
-  resolved "https://registry.yarnpkg.com/hexo-bilibili-bangumi/-/hexo-bilibili-bangumi-1.11.1.tgz#02d7883a6ae1e367e3713e36e29988eb63f70124"
-  integrity sha512-rev/qzbw3fgZLmuy6bM9IBKrP2gQuR4u7W0tIBo1yO+MkZg3TvGu63qJg/BfwYMo/Q/qnRWqN1WVUM8xXMI75g==
+hexo-bilibili-bangumi@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/hexo-bilibili-bangumi/-/hexo-bilibili-bangumi-2.0.2.tgz#00bd3f10a2d7307d006631d0b26090bd35c16c4b"
+  integrity sha512-Il7ps/Xe9+N02y2UtBRNcojG/SznztNZ2EDw5j9Bqb7jZxS9RoBtt5P3Jo2SdkxzcKM0H4cCEfbzQUFSaH/aFA==
   dependencies:
     "@babel/runtime" "^7.18.0"
     axios "^1.0.0"
     bangumi-data "^0.3.91"
     cheerio "^1.0.0-rc.11"
-    ejs "3.1.10"
     hexo-fs "^5.0.0"
     hexo-i18n "^2.0.0"
     hexo-log "^4.0.1"
     progress "^2.0.3"
+    pug "^3.0.3"
     tunnel "^0.0.6"
 
 hexo-bunyan@^1.0.0:
@@ -3562,7 +3562,7 @@ pug-walk@^2.0.0:
   resolved "https://registry.npmjs.org/pug-walk/-/pug-walk-2.0.0.tgz"
   integrity sha512-yYELe9Q5q9IQhuvqsZNwA5hfPkMJ8u92bQLIMcsMxf/VADjNtEYptU+inlufAFYcWdHlwNfZOEnOOQrZrcyJCQ==
 
-pug@^3.0.2:
+pug@^3.0.2, pug@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/pug/-/pug-3.0.3.tgz#e18324a314cd022883b1e0372b8af3a1a99f7597"
   integrity sha512-uBi6kmc9f3SZ3PXxqcHiUZLmIXgfgWooKWXcwSGwQd2Zi5Rb0bT14+8CJjJgI8AB+nndLaNgHGrcc6bPIB665g==
