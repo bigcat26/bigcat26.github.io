@@ -27,8 +27,8 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  # fab fa-github: https://github.com/xxxxx || Github
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email
+  fab fa-github: https://github.com/bigcat26 || Github
+  fas fa-envelope: mailto:bigcat26@gmail.com || Email
 
 menu:
   首页: / || fas fa-home
@@ -40,6 +40,10 @@ menu:
     追剧: /cinemas/ || fas fa-film
   #留言: /comments/ || fa fa-comments
   链接: /link/ || fas fa-link
+
+avatar:
+  img: /img/avatar.jpg
+  effect: false
 
 aside:
   enable: true
