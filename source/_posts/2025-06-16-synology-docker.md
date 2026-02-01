@@ -2,7 +2,7 @@
 title: Synology Docker常用命令以及问题解决
 date: 2025-06-16
 # top_img: /img/dog.webp
-# cover: /img/dog.webp
+cover: /img/synology-nas.png
 tags: 
   - Synology
   - docker
