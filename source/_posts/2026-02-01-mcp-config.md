@@ -66,7 +66,11 @@ GitHub MCP 服务连接到 GitHub，让 AI 可以执行仓库操作、查看代�
 
 Git MCP 服务提供了 Git 版本控制操作功能，让 AI 可以执行提交、分支管理、合并等 Git 命令。这对于需要版本控制、团队协作的开发任务非常有用。
 
-### 12. Sequential Thinking
+### 12. Vikunja
+
+Vikunja 是一个开源的项目管理工具，类似于 Trello 或 Todoist，支持任务管理、看板和项目组织。通过 MCP 与 Vikunja 实例的集成，可以实现任务的同步和管理，让 AI 能够直接操作和更新项目任务。配置中需要设置 Vikunja 实例的 URL 和 API 令牌，以便建立安全连接。
+
+### 13. Sequential Thinking
 
 Sequential Thinking MCP 服务提供了逻辑推理和顺序思考能力，让 AI 可以进行更复杂的逻辑分析和问题解决。这对于需要逐步推理、分析复杂问题的任务非常有用。
 
@@ -101,7 +105,9 @@ Sequential Thinking MCP 服务提供了逻辑推理和顺序思考能力，让 A
                 "-y",
                 "@modelcontextprotocol/server-memory"
             ],
-            "env": {}
+            "env": {
+                "MEMORY_FILE_PATH": "/path/to/memory.json"
+            }
         },
         "Time": {
             "command": "uvx",
@@ -137,6 +143,17 @@ Sequential Thinking MCP 服务提供了逻辑推理和顺序思考能力，让 A
                 "JOPLIN_TOKEN": "token"
             }
         },
+        "Vikunja": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@aimbitgmbh/vikunja-mcp"
+            ],
+            "env": {
+                "VIKUNJA_URL": "<URL>",
+                "VIKUNJA_API_TOKEN": "<API_TOKEN>"
+            }
+        },
         "fetch": {
             "args": [
                 "mcp-server-fetch"
@@ -167,16 +184,6 @@ Sequential Thinking MCP 服务提供了逻辑推理和顺序思考能力，让 A
                 "GITHUB_PERSONAL_ACCESS_TOKEN": "token"
             }
         },
-        "memory": {
-            "args": [
-                "-y",
-                "@modelcontextprotocol/server-memory"
-            ],
-            "command": "npx",
-            "env": {
-                "MEMORY_FILE_PATH": "/path/to/memory.json"
-            }
-        },
         "sequential-thinking": {
             "args": [
                 "-y",
@@ -190,6 +197,19 @@ Sequential Thinking MCP 服务提供了逻辑推理和顺序思考能力，让 A
                 "mcp-server-git"
             ],
             "command": "uvx",
+            "env": {}
+        },
+        "docker": {
+            "command": "uvx",
+            "args": [
+                "docker-mcp"
+            ]
+        },
+        "duckduckgo": {
+            "command": "uvx",
+            "args": [
+                "duckduckgo-mcp-server"
+            ],
             "env": {}
         }
     }
