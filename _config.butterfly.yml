@@ -109,3 +109,29 @@ math:
       enable: true
       copy_tex_js: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.js
       copy_tex_css: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.css
+
+# 评论系统
+comments:
+  enable: true
+  use: giscus
+  text: 评论
+  lazyload: true
+  count: true
+  card_post_count: true
+  comment_count: true
+
+# giscus 评论系统设置
+giscus:
+  repo: bigcat26/bigcat26.github.io
+  repo_id: MDEwOlJlcG9zaXRvcnkxNzA0Njc4MjI=
+  category: Comments
+  category_id: DIC_kwDOCikh7s4C1wfL
+  mapping: pathname
+  strict: 0
+  reactions_enabled: 1
+  emit_metadata: 0
+  input_position: bottom
+  theme: preferred_color_scheme
+  lang: zh-CN
+  loading: lazy
+  crossorigin: anonymous
