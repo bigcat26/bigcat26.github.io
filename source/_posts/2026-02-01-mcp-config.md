@@ -76,7 +76,7 @@ Sequential Thinking MCP 服务提供了逻辑推理和顺序思考能力，让 A
 
 ### Kanboard
 
-Kanboard MCP 服务连接到 Kanboard 项目管理系统，让 AI 可以执行项目管理相关的操作，包括创建和管理任务、项目、评论、标签等。它提供了 60+ 个 Kanboard API 端点的访问能力，涵盖项目、任务、分类、列、看板、评论、用户、链接、子任务、标签和文件等多个方面。配置中需要设置 Kanboard 实例的 URL、用户名和 API 令牌。官方 URL：[https://github.com/hoducha/kanboard-mcp](https://github.com/hoducha/kanboard-mcp)
+Kanboard MCP 服务连接到 Kanboard 项目管理系统，让 AI 可以执行项目管理相关的操作，包括创建和管理任务、项目、评论、标签等。它提供了 60+ 个 Kanboard API 端点的访问能力，涵盖项目、任务、分类、列、看板、评论、用户、链接、子任务、标签和文件等多个方面。配置中需要设置 Kanboard 实例的 URL、用户名和 API 令牌。
 
 ## MCP 配置
 
@@ -218,7 +218,7 @@ Kanboard MCP 服务连接到 Kanboard 项目管理系统，让 AI 可以执行�
         },
         "kanboard": {
             "command": "uvx",
-            "args": ["kanboard-mcp"],
+            "args": ["--from", "git+https://github.com/bigcat26/kanboard-mcp", "kanboard-mcp"],
             "env": {
                 "KANBOARD_URL": "https://your-kanboard.com/jsonrpc.php",
                 "KANBOARD_USERNAME": "jsonrpc",
