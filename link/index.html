@@ -1,0 +1,444 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>链接 | Stargazer</title><meta name="author" content="Stargazer"><meta name="copyright" content="Stargazer"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Design  Portfolio  花瓣网 站酷 Dribbble 可画   Tools  Figma  Figma中文手册   墨刀   Background  bg-painter：从一堆现成的背景图pattern选择一张，然后可以随机改变 Background Generator：背景图生成器，功能比较强大 Cool Backgrounds：背景图生成器，可选pattern没有Backg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="链接">
+<meta property="og:url" content="http://www.3wen.net/link/index.html">
+<meta property="og:site_name" content="Stargazer">
+<meta property="og:description" content="Design  Portfolio  花瓣网 站酷 Dribbble 可画   Tools  Figma  Figma中文手册   墨刀   Background  bg-painter：从一堆现成的背景图pattern选择一张，然后可以随机改变 Background Generator：背景图生成器，功能比较强大 Cool Backgrounds：背景图生成器，可选pattern没有Backg">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://www.3wen.net/img/avatar.jpg">
+<meta property="article:published_time" content="2021-08-17T16:45:12.000Z">
+<meta property="article:modified_time" content="2026-02-05T09:51:18.800Z">
+<meta property="article:author" content="Stargazer">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.3wen.net/img/avatar.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://www.3wen.net/link/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '链接',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">45</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> Bilibili</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fas fa-film"></i><span> 追番</span></a></li><li><a class="site-page child" href="/cinemas/"><i class="fa-fw fas fa-film"></i><span> 追剧</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div></div></div><div class="page type-link" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url(/img/genshin_impact_bg.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Stargazer</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> Bilibili</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fas fa-film"></i><span> 追番</span></a></li><li><a class="site-page child" href="/cinemas/"><i class="fa-fw fas fa-film"></i><span> 追剧</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">链接</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><div class="flink"><h1 id="design"><a class="markdownIt-Anchor" href="#design"></a> Design</h1>
+<h2 id="portfolio"><a class="markdownIt-Anchor" href="#portfolio"></a> Portfolio</h2>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://huaban.com/">花瓣网</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.zcool.com.cn/">站酷</a></li>
+<li><a target="_blank" rel="noopener" href="https://dribbble.com/">Dribbble</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.canva.cn/">可画</a></li>
+</ul>
+<h2 id="tools"><a class="markdownIt-Anchor" href="#tools"></a> Tools</h2>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.figma.com/">Figma</a>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://figmachina.com/guide/">Figma中文手册</a></li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://modao.cc/">墨刀</a></li>
+</ul>
+<h2 id="background"><a class="markdownIt-Anchor" href="#background"></a> Background</h2>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://bg-painter.com/">bg-painter</a>：从一堆现成的背景图pattern选择一张，然后可以随机改变</li>
+<li><a target="_blank" rel="noopener" href="https://bggenerator.com/">Background Generator</a>：背景图生成器，功能比较强大</li>
+<li><a target="_blank" rel="noopener" href="https://coolbackgrounds.io/">Cool Backgrounds</a>：背景图生成器，可选pattern没有Background Generator多</li>
+<li><a target="_blank" rel="noopener" href="http://www.51yuansu.com/">觅元素</a>：免抠元素、背景图下载，会员价格不贵，免费账号一天下载4张</li>
+<li><a target="_blank" rel="noopener" href="https://patternizer.com/%EF%BC%9A%E7%94%9F%E6%88%90%E6%A0%BC%E5%AD%90%E8%83%8C%E6%99%AF%E5%9B%BE">https://patternizer.com/：生成格子背景图</a></li>
+</ul>
+<h2 id="illustration"><a class="markdownIt-Anchor" href="#illustration"></a> Illustration</h2>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.pixeltrue.com/free-illustrations">PixelTrue矢量插画免费版</a>：13个免费的Illustrations pack</li>
+<li><a target="_blank" rel="noopener" href="https://undraw.co/illustrations">undraw矢量插画</a>：免费下载SVG或者PNG，可以改变颜色，风格较为商务较为统一，瀑布式加载无法搜索比较蛋疼</li>
+<li><a target="_blank" rel="noopener" href="https://www.manypixels.co/gallery%EF%BC%9A%E5%85%8D%E8%B4%B9%E7%9A%84%E6%8F%92%E7%94%BB">https://www.manypixels.co/gallery：免费的插画</a></li>
+<li><a target="_blank" rel="noopener" href="https://icons8.com/illustrations/style--delesign%EF%BC%9A%E9%83%A8%E5%88%86%E5%85%8D%E8%B4%B9%E6%8F%92%E7%94%BB%EF%BC%8C%E9%A3%8E%E6%A0%BC%E8%B4%A8%E9%87%8F%E4%B8%8D%E4%B8%80">https://icons8.com/illustrations/style--delesign：部分免费插画，风格质量不一</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.humaaans.com/%EF%BC%9A%E5%85%8D%E8%B4%B9%E4%BA%BA%E5%9E%8B%E6%8F%92%E7%94%BB%EF%BC%8C%E9%A3%8E%E6%A0%BC%E5%B9%B6%E9%9D%9E%E4%B8%AA%E4%BA%BA%E5%81%8F%E5%A5%BD%E7%9A%84%E7%B1%BB%E5%9E%8B%E3%80%82%E3%80%82">https://www.humaaans.com/：免费人型插画，风格并非个人偏好的类型。。</a></li>
+</ul>
+<h2 id="icon"><a class="markdownIt-Anchor" href="#icon"></a> Icon</h2>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.iconfont.cn/">阿里巴巴图标网</a></li>
+<li><a target="_blank" rel="noopener" href="https://iconstore.co/">iconstore</a>：各种品类的矢量图标，看起来适合练习黄金分割临摹</li>
+<li><a target="_blank" rel="noopener" href="https://igoutu.cn/">Icons8.cn/igoutu.cn</a>: 除了图标还有移除背景、人脸生成、超分辨率等软件</li>
+<li><a target="_blank" rel="noopener" href="https://ikonate.com/">Ikonate</a>: 一组矢量图标，可以在线调border粗细，大小，和颜色</li>
+<li>icoon：<a target="_blank" rel="noopener" href="https://icooon-mono.com/">https://icooon-mono.com/</a></li>
+<li>iconfinder：<a target="_blank" rel="noopener" href="https://www.iconfinder.com/">https://www.iconfinder.com/</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.fontawesome.com.cn/">FontAwesome中文网</a></li>
+</ul>
+<h2 id="pictures"><a class="markdownIt-Anchor" href="#pictures"></a> Pictures</h2>
+<ul>
+<li>pixabay：<a target="_blank" rel="noopener" href="https://pixabay.com/zh/">https://pixabay.com/zh/</a></li>
+<li>Unsplash：<a target="_blank" rel="noopener" href="https://unsplash.com/">https://unsplash.com/</a></li>
+<li>Pexels：<a target="_blank" rel="noopener" href="https://www.pexels.com/zh-cn/">https://www.pexels.com/zh-cn/</a></li>
+<li>Foodiesfeed ：<a target="_blank" rel="noopener" href="https://www.foodiesfeed.com">https://www.foodiesfeed.com</a></li>
+<li>CC零图片网：<a target="_blank" rel="noopener" href="https://cc0.cn/">https://cc0.cn/</a></li>
+<li>Logo神器：<a target="_blank" rel="noopener" href="https://www.logosc.cn/so/">https://www.logosc.cn/so/</a></li>
+</ul>
+<h2 id="templates"><a class="markdownIt-Anchor" href="#templates"></a> Templates</h2>
+<ul>
+<li>freepik：<a target="_blank" rel="noopener" href="https://www.freepik.com/">https://www.freepik.com/</a></li>
+<li>free-PSD-templates：<a target="_blank" rel="noopener" href="https://free-psd-templates.com/">https://free-psd-templates.com/</a></li>
+<li>365psd：<a target="_blank" rel="noopener" href="https://365psd.com/">https://365psd.com/</a></li>
+<li>pngimage：<a target="_blank" rel="noopener" href="http://pngimg.com/">http://pngimg.com/</a></li>
+<li>CleanPNG：<a target="_blank" rel="noopener" href="https://www.cleanpng.com/">https://www.cleanpng.com/</a></li>
+</ul>
+<h2 id="color"><a class="markdownIt-Anchor" href="#color"></a> Color</h2>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://zhongguose.com/">中国色</a></li>
+<li><a target="_blank" rel="noopener" href="https://nipponcolors.com/">日本色</a></li>
+<li><a target="_blank" rel="noopener" href="https://color.adobe.com/zh/create/color-wheel">Adobe Color</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.colordrop.io/">ColorDrop</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.colorhexa.com/">ColorHex</a></li>
+<li><a target="_blank" rel="noopener" href="https://peiseka.com/">配色卡</a></li>
+<li><a target="_blank" rel="noopener" href="https://color.uisdc.com/">优色</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.shejidaren.com/examples/tools/color-scheme/">https://www.shejidaren.com/examples/tools/color-scheme/</a></li>
+<li><a target="_blank" rel="noopener" href="https://webgradients.com/">https://webgradients.com/</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.webdesignrankings.com/resources/lolcolors/">https://www.webdesignrankings.com/resources/lolcolors/</a></li>
+<li><a target="_blank" rel="noopener" href="https://colorhunt.co/">https://colorhunt.co/</a></li>
+<li><a target="_blank" rel="noopener" href="https://uigradients.com/">https://uigradients.com/</a></li>
+<li><a target="_blank" rel="noopener" href="https://colourco.de/">https://colourco.de/</a></li>
+</ul>
+<h2 id="font"><a class="markdownIt-Anchor" href="#font"></a> Font</h2>
+<ul>
+<li>
+<p>字由：<a target="_blank" rel="noopener" href="https://www.hellofont.cn/">https://www.hellofont.cn/</a></p>
+</li>
+<li>
+<p>100font：<a target="_blank" rel="noopener" href="https://www.100font.com/">https://www.100font.com/</a></p>
+</li>
+</ul>
+<h1 id="ebooks"><a class="markdownIt-Anchor" href="#ebooks"></a> EBooks</h1>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener" href="https://www.ituring.com.cn/">图灵社区</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="https://www.jiumodiary.com/">Jiumo Search 鸠摩搜索</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="https://https://ebook.huzerui.com/">熊猫搜书</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="https://bookfere.com/">书伴</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="http://cn.epubee.com/books/">ePUBee电子书库</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="https://kgbook.com/">苦瓜书盘</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="https://books.andrewjr.wang/0:/">静然书屋</a></p>
+</li>
+</ul>
+<h1 id="wallpaper"><a class="markdownIt-Anchor" href="#wallpaper"></a> Wallpaper</h1>
+<ul>
+<li>wallhaven：<a target="_blank" rel="noopener" href="https://wallhaven.cc/">https://wallhaven.cc/</a></li>
+<li>Wallpaper Abyss：<a target="_blank" rel="noopener" href="https://wall.alphacoders.com/">https://wall.alphacoders.com/</a></li>
+<li>极简壁纸：<a target="_blank" rel="noopener" href="https://bz.zzzmh.cn/">https://bz.zzzmh.cn/</a></li>
+</ul>
+<h1 id="audio"><a class="markdownIt-Anchor" href="#audio"></a> Audio</h1>
+<ul>
+<li>audionautix ：<a target="_blank" rel="noopener" href="https://audionautix.com/">https://audionautix.com/</a></li>
+<li>Freepd：<a target="_blank" rel="noopener" href="https://freepd.com/">https://freepd.com/</a></li>
+<li>Freesound：<a target="_blank" rel="noopener" href="https://freesound.org/">https://freesound.org/</a></li>
+<li>耳聆网：<a target="_blank" rel="noopener" href="https://www.ear0.com/">https://www.ear0.com/</a></li>
+<li>淘声网：<a target="_blank" rel="noopener" href="https://www.tosound.com/">https://www.tosound.com/</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.lalal.ai/">https://www.lalal.ai/</a></li>
+</ul>
+<h1 id="acg"><a class="markdownIt-Anchor" href="#acg"></a> ACG</h1>
+<p>Anime Scene Snapshot Search: <a target="_blank" rel="noopener" href="https://trace.moe/">https://trace.moe/</a></p>
+</div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Stargazer</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">45</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/bigcat26"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/bigcat26" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:bigcat26@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/02/01/2026-02-01-opencode-configuration-guide/" title="Opencode 配置技巧"><img src="/img/opencode.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Opencode 配置技巧"/></a><div class="content"><a class="title" href="/2026/02/01/2026-02-01-opencode-configuration-guide/" title="Opencode 配置技巧">Opencode 配置技巧</a><time datetime="2026-01-31T16:00:00.000Z" title="发表于 2026-02-01 00:00:00">2026-02-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/02/01/2026-02-01-mcp-config/" title="常用的 MCP 配置记录"><img src="/img/mcp-market.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="常用的 MCP 配置记录"/></a><div class="content"><a class="title" href="/2026/02/01/2026-02-01-mcp-config/" title="常用的 MCP 配置记录">常用的 MCP 配置记录</a><time datetime="2026-01-31T16:00:00.000Z" title="发表于 2026-02-01 00:00:00">2026-02-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/06/16/2025-06-16-synology-docker/" title="Synology Docker常用命令以及问题解决"><img src="/img/synology-nas.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Synology Docker常用命令以及问题解决"/></a><div class="content"><a class="title" href="/2025/06/16/2025-06-16-synology-docker/" title="Synology Docker常用命令以及问题解决">Synology Docker常用命令以及问题解决</a><time datetime="2025-06-15T16:00:00.000Z" title="发表于 2025-06-16 00:00:00">2025-06-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/04/21/2025-04-21-mcp-prompts/" title="整理一下mcp和prompts相关的资料"><img src="/img/mcp.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="整理一下mcp和prompts相关的资料"/></a><div class="content"><a class="title" href="/2025/04/21/2025-04-21-mcp-prompts/" title="整理一下mcp和prompts相关的资料">整理一下mcp和prompts相关的资料</a><time datetime="2025-04-20T16:00:00.000Z" title="发表于 2025-04-21 00:00:00">2025-04-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/04/10/2025-04-10-qwen2.5-vl-finetune/" title="微调Qwen2.5 VL-7B-Instruct"><img src="/img/dog.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="微调Qwen2.5 VL-7B-Instruct"/></a><div class="content"><a class="title" href="/2025/04/10/2025-04-10-qwen2.5-vl-finetune/" title="微调Qwen2.5 VL-7B-Instruct">微调Qwen2.5 VL-7B-Instruct</a><time datetime="2025-04-09T16:00:00.000Z" title="发表于 2025-04-10 00:00:00">2025-04-10</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+      <i class="fas fa-angle-right"></i></a>
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/AI/"><span class="card-category-list-name">AI</span><span class="card-category-list-count">2</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/AI/LLM/"><span class="card-category-list-name">LLM</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/AI/LLM/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"><span class="card-category-list-name">开发工具</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/AI/LLM/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/%E6%8F%90%E7%A4%BA%E8%AF%8D/"><span class="card-category-list-name">提示词</span><span class="card-category-list-count">1</span></a></li></ul></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/AI/%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/"><span class="card-category-list-name">模型训练</span><span class="card-category-list-count">1</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Docker/"><span class="card-category-list-name">Docker</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/"><span class="card-category-list-name">技术</span><span class="card-category-list-count">6</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/Android/"><span class="card-category-list-name">Android</span><span class="card-category-list-count">1</span></a></li></ul></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/grpc/" style="font-size: 1.1em; color: #999">grpc</a> <a href="/tags/kotlin/" style="font-size: 1.1em; color: #999">kotlin</a> <a href="/tags/pearson/" style="font-size: 1.1em; color: #999">pearson</a> <a href="/tags/MCP/" style="font-size: 1.1em; color: #999">MCP</a> <a href="/tags/protobuf/" style="font-size: 1.1em; color: #999">protobuf</a> <a href="/tags/c/" style="font-size: 1.1em; color: #999">c++</a> <a href="/tags/android/" style="font-size: 1.3em; color: #99a1ac">android</a> <a href="/tags/ai/" style="font-size: 1.1em; color: #999">ai</a> <a href="/tags/app/" style="font-size: 1.1em; color: #999">app</a> <a href="/tags/covariance/" style="font-size: 1.1em; color: #999">covariance</a> <a href="/tags/finetune/" style="font-size: 1.1em; color: #999">finetune</a> <a href="/tags/design/" style="font-size: 1.1em; color: #999">design</a> <a href="/tags/Synology/" style="font-size: 1.1em; color: #999">Synology</a> <a href="/tags/%E9%85%8D%E7%BD%AE/" style="font-size: 1.1em; color: #999">配置</a> <a href="/tags/stable-diffusion/" style="font-size: 1.1em; color: #999">stable diffusion</a> <a href="/tags/cursor/" style="font-size: 1.1em; color: #999">cursor</a> <a href="/tags/flutter/" style="font-size: 1.1em; color: #999">flutter</a> <a href="/tags/cloud/" style="font-size: 1.1em; color: #999">cloud</a> <a href="/tags/ui/" style="font-size: 1.1em; color: #999">ui</a> <a href="/tags/docker/" style="font-size: 1.1em; color: #999">docker</a> <a href="/tags/gradient-descent/" style="font-size: 1.5em; color: #99a9bf">gradient descent</a> <a href="/tags/yaml/" style="font-size: 1.1em; color: #999">yaml</a> <a href="/tags/pid/" style="font-size: 1.1em; color: #999">pid</a> <a href="/tags/AI%E7%94%BB%E5%9B%BE/" style="font-size: 1.1em; color: #999">AI画图</a> <a href="/tags/%E7%BB%88%E7%AB%AF/" style="font-size: 1.1em; color: #999">终端</a> <a href="/tags/kmeans/" style="font-size: 1.1em; color: #999">kmeans</a> <a href="/tags/least-square-method/" style="font-size: 1.1em; color: #999">least square method</a> <a href="/tags/yolo/" style="font-size: 1.1em; color: #999">yolo</a> <a href="/tags/debug/" style="font-size: 1.1em; color: #999">debug</a> <a href="/tags/opencode/" style="font-size: 1.1em; color: #999">opencode</a> <a href="/tags/%E7%AC%94%E8%AE%B0%E6%9C%AC/" style="font-size: 1.1em; color: #999">笔记本</a> <a href="/tags/zsh/" style="font-size: 1.1em; color: #999">zsh</a> <a href="/tags/kalman-filter/" style="font-size: 1.1em; color: #999">kalman filter</a> <a href="/tags/logistic-regression/" style="font-size: 1.1em; color: #999">logistic regression</a> <a href="/tags/prompts/" style="font-size: 1.1em; color: #999">prompts</a> <a href="/tags/mooc/" style="font-size: 1.1em; color: #999">mooc</a> <a href="/tags/pytorch/" style="font-size: 1.1em; color: #999">pytorch</a> <a href="/tags/control-system/" style="font-size: 1.3em; color: #99a1ac">control system</a> <a href="/tags/LLM/" style="font-size: 1.3em; color: #99a1ac">LLM</a> <a href="/tags/mcp/" style="font-size: 1.1em; color: #999">mcp</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      <a class="card-more-btn" href="/archives/"
+            title="查看更多">
+            <i class="fas fa-angle-right"></i>
+          </a>
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/02/">
+            <span class="card-archive-list-date">
+              二月 2026
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/06/">
+            <span class="card-archive-list-date">
+              六月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/04/">
+            <span class="card-archive-list-date">
+              四月 2025
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/03/">
+            <span class="card-archive-list-date">
+              三月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/02/">
+            <span class="card-archive-list-date">
+              二月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2023/08/">
+            <span class="card-archive-list-date">
+              八月 2023
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2023/04/">
+            <span class="card-archive-list-date">
+              四月 2023
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2023/02/">
+            <span class="card-archive-list-date">
+              二月 2023
+            </span>
+            <span class="card-archive-list-count">4</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">25</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-02-05T09:51:42.231Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Stargazer</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'bigcat26/bigcat26.github.io',
+      'data-repo-id': 'MDEwOlJlcG9zaXRvcnkxNzA0Njc4MjI=',
+      'data-category-id': 'DIC_kwDOCikh7s4C1wfL',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !true) {
+    if (true) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>

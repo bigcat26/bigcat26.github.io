@@ -1,0 +1,239 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Stargazer - Every cloud has a silver lining</title><meta name="author" content="Stargazer"><meta name="copyright" content="Stargazer"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Stargazer">
+<meta property="og:url" content="http://www.3wen.net/page/2/index.html">
+<meta property="og:site_name" content="Stargazer">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://www.3wen.net/img/avatar.jpg">
+<meta property="article:author" content="Stargazer">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.3wen.net/img/avatar.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://www.3wen.net/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Stargazer',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">45</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> Bilibili</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fas fa-film"></i><span> 追番</span></a></li><li><a class="site-page child" href="/cinemas/"><i class="fa-fw fas fa-film"></i><span> 追剧</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/img/stable-diffusion-mermaid-header.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Stargazer</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> Bilibili</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fas fa-film"></i><span> 追番</span></a></li><li><a class="site-page child" href="/cinemas/"><i class="fa-fw fas fa-film"></i><span> 追剧</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">Stargazer</h1><div id="site_social_icons"><a class="social-icon" href="https://github.com/bigcat26" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:bigcat26@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/02/10/logistic-regression/" title="逻辑回归整理">逻辑回归整理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-02-09T16:00:08.000Z" title="发表于 2023-02-10 00:00:08">2023-02-10</time></span></div><div class="content"> 逻辑回归  Sigmoid function Sigmoid函数：σ(z)=(1+e−z)−1\sigma(z) = (1 + e^{-z})^{-1}σ(z)=(1+e−z)−1 线性回归：z=w0x0+w1x1+...+wixi=∑iwixiz = w_0x_0 + w1_x1 + ... + w_ix_i = \sum_{i} w_ix_iz=w0​x0​+w1x​1+...+wi​xi​=∑i​wi​xi​, 矩阵形式: z=WTXz = W^TXz=WTX 逻辑回归：σ(z)=σ(w0x0+w1x1+...+wixi)=(1+e−(w0x0+w1x1+...+wixi))−1=(1+e−WTX)−1\sigma(z) = \sigma(w_0x_0 + w1_x1 + ... + w_ix_i) = (1 + e^{-(w_0x_0 + w1_x1 + ... + w_ix_i)})^{-1} = (1 + e^{-W^TX})^{-1}σ(z)=σ(w0​x0​+w1x​1+...+wi​xi​)=(1+e−(w0​x0​+w1x​1+...+wi​xi​))−1=...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/02/04/correlation-coefficient/" title="相关性系数笔记">相关性系数笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-02-03T18:29:00.000Z" title="发表于 2023-02-04 02:29:00">2023-02-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%BE%E8%AE%A1/">设计</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%BE%E8%AE%A1/UI-UX/">UI/UX</a></span></div><div class="content"> 相关性系数笔记 相关性系数可以用于衡量两个变量的相关性。  协方差 (covariance) 协方差在概率论和统计学中用于衡量两个变量的总体误差。x和y是两个随机变量，以下函数用于计算x和y序列的协方差。 covx,y=1N−1∑i=1N(xi−xˉ)(yi−yˉ)cov_{x,y}=\frac{1}{N - 1}\sum_{i=1}^{N}(x_{i}-\bar{x})(y_{i}-\bar{y})covx,y​=N−11​∑i=1N​(xi​−xˉ)(yi​−yˉ​)  covx,ycov_{x,y}covx,y​ = covariance between variable x and y xix_{i}xi​ = data value of x yiy_{i}yi​ = data value of y xˉ\bar{x}xˉ	= mean of x yˉ\bar{y}yˉ​	= mean of y NNN = number of data values  协方差输出正值表示正相关，负值表示负相关，0表示不相关。值大小不代表相关程度。  协方差矩阵 (covariance ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/02/01/gradient-descent/" title="梯度下降拟合曲线">梯度下降拟合曲线</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-01-31T16:00:08.000Z" title="发表于 2023-02-01 00:00:08">2023-02-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a></span></div><div class="content"> 梯度下降拟合曲线 原本打算使用python代码实现梯度下降曲线拟合。搜索了一圈没有找到讲得非常详细的文章。自己实践了一下记录在此。 注：公式是后期整理的没有很仔细，也许会有些细节上的问题，仅供参考。  原理 首先确定拟合曲线的函数是怎样的，这里用一元k次方程： y(w0,w1...wk)=w0+w1x+w2x2...+wkxk=∑n=0kwnxny(w_0,w_1...w_k) = w_0 + w_1 x + w_2 x^2 ... + w_k x^k = \sum_{n=0}^{k} {w_n}{x^n}y(w0​,w1​...wk​)=w0​+w1​x+w2​x2...+wk​xk=∑n=0k​wn​xn 然后，确定使用最小二乘损失函数： L=∑i=0j12j(yi^−𝑦i)2L = \sum_{i=0}^{j} \frac{1}{2j} (\hat{y_i} - 𝑦_i) ^ 2L=∑i=0j​2j1​(yi​^​−yi​)2 这里的y^\hat{y}y^​是观测值, yiy_iyi​是理论值(ground truth)，jjj是一次迭代的样本个数。 梯度下降优化，就...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/21/pid-algorithm/" title="PID算法笔记">PID算法笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-01-20T18:00:00.000Z" title="发表于 2023-01-21 02:00:00">2023-01-21</time></span></div><div class="content"> PID笔记 参考B站的奇乐编程学院的视频: 通俗易懂的 PID 控制算法讲解  TODO  [ ] 串级PID   公式  u(t)=Kpe(t)+Ki∫e(t)dt+Kpdedtu(t)=K_{p} e(t)+K_{i} \int e(t) d t+K_{p} \frac{de}{dt}u(t)=Kp​e(t)+Ki​∫e(t)dt+Kp​dtde​  u(t)u(t)u(t): PID control variable, 控制输出值 KpK_{p}Kp​: proportional gain, 比例增益 e(t)e(t)e(t): error value, t时刻的误差值 KiK_{i}Ki​: integral gain, 积分增益 de{de}de: change in error value, 误差微分 dt{dt}dt: change in time, 时间微分  其中, KpK_{p}Kp​, KiK_{i}Ki​, KdK_{d}Kd​需要调参  计算步骤 Python代码 1234567891011121314151617def pid(kp, ki, kd,...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/20/kalman-filter-1/" title="Kalman filter学习笔记">Kalman filter学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-01-19T18:38:00.000Z" title="发表于 2023-01-20 02:38:00">2023-01-20</time></span></div><div class="content"> Kalman filter学习笔记  前言 本文纯属笔记且未完成，巨坑，不具参考性。  应用  数据融合 目标追踪(SoRT)   前置知识点  线性代数 协方差，协方差矩阵 正态分布   运动模型 运动模型可以分为  一次运动模型  CV: 匀速模型(Constant Velocity) CA: 匀加速模型(Constant Acceleration)   二次运动模型  CTRV: 恒定转弯率和速度幅度模型(Constant Turn Rate and Velocity) CTRA: 恒定转动率和加速度 CSAV: 恒定转向角和速度 CCA: 恒定曲率和加速度(Constant Curvature and Acceleration)     匀速模型例子  系统状态方程 x^k=Ax^k−1+wk−1\hat{x}_k = A\hat{x}_{k - 1} + w_{k - 1}x^k​=Ax^k−1​+wk−1​  x^k\hat{x}_kx^k​: 第k次预测值 wk−1w_{k-1}wk−1​: 过程误差协方差矩阵, 符合期望为0，协方差为Q的正态分布 P(w)∼N(...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/11/12/2022-11-12-gpu-cloud-computing/" title="GPU cloud computing market">GPU cloud computing market</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-11-12T04:00:00.000Z" title="发表于 2022-11-12 12:00:00">2022-11-12</time></span></div><div class="content"> GPU云计算市场 这两天正式开始用AutoDL炼丹。感觉还是比较容易上手的。   貌似有点过拟合了。 忘了怎么找到这个AutoDL的，11-11前有重新装机的打算，准备装一个GPU搞DL训练。但是好几部分原因，搁置了装机计划，改为线上租赁。 现在用的是一个￥0.6/h的1080ti实例跑一下facenet的训练，作为前期的学习和验证足够了。它最低貌似能到0.49/h (TITAN)，但不太好抢。这个价格也就每小时一度电左右的费用，自己装机除了硬件费用还要给电费，而且硬件还有贬值，还要自己搭环境，收集数据，没有直接用线上的来的方便。  表格 随便简单采样了一些，发现这个领域还是比较卷的。    算力市场 数据集 备注     AutoDL 共享/百度云/阿里云盘    featurize 共享 可用较少, 没价格优势   智星云 公共    矩池云  1.00/h 起   恒源云 公共/共享 0.60/h 起, 类似autodl, 注册才能看价格   腾讯云  没仔细看     loss反映出的问题  train loss 不断下降，test loss不断下降，说明网络仍在学习;...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/08/04/mooc-bb/" title="吐槽一下那些慕课">吐槽一下那些慕课</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-08-04T15:00:00.000Z" title="发表于 2022-08-04 23:00:00">2022-08-04</time></span></div><div class="content"> 吐槽一下那些慕课 就不指名道姓了，估计大部分都差不多。 起个超大的标题，什么百万级高并发服务器设计与开发，进去一看前一半第一章hello world，后一半配服务器，最后一页告诉你。那感觉就像打开一本高等数学，第一页先从99乘法表开始水了一半，后面一元一次方程水一半，最后一页介绍了下微积分。这还是收费的所谓实战课，综合评分一看全满，评价默认好评还不能改。 这种课程你说它挂羊头卖狗肉吧，但是标题写的啥都蹭了一点，不过真的对不起这个标题和价格。 </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/05/28/yaml-cpp-node/" title="yaml-cpp按路径获取节点的方法">yaml-cpp按路径获取节点的方法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-05-27T16:00:00.000Z" title="发表于 2022-05-28 00:00:00">2022-05-28</time></span></div><div class="content">代码先丢在这，文字以后再补 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556static inline std::vector&lt;std::string&gt; stringSplit(const std::string &amp;str,                                                   const char delimiter) &#123;  std::string tok;  std::stringstream ss(str);  std::vector&lt;std::string&gt; vec;  while (std::getline(ss, tok, delimiter)) &#123;    vec.push_back(tok);  &#125;  return vec;&#125;static inline YAML::Node getNodeByP...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/03/24/android-kotlin-grpc-note/" title="Android Kotlin使用gRPC">Android Kotlin使用gRPC</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-03-24T11:00:00.000Z" title="发表于 2022-03-24 19:00:00">2022-03-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/Android/">Android</a></span></div><div class="content"> Android Kotlin使用gRPC记录  修改Project gradle kts  添加plugin 1id(&#x27;com.google.protobuf&#x27;) version &#x27;0.8.18&#x27;  添加dependencies 1234567implementation(&#x27;io.grpc:grpc-protobuf:1.45.0&#x27;)// gRPC请求依赖网络库，需指定netty或okhttpimplementation(&#x27;io.grpc:grpc-okhttp:1.45.0&#x27;)implementation(&quot;io.grpc:grpc-stub:1.45.0&quot;)implementation(&quot;io.grpc:grpc-kotlin-stub:1.2.1&quot;)implementation(&quot;com.google.protobuf:protobuf-kotlin:3.19.4&quot;)  添加protobuf block 123456789101112...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/03/19/flutter-debug-issue/" title="Flutter调试问题Failed to create server socket">Flutter调试问题Failed to create server socket</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-03-19T02:00:00.000Z" title="发表于 2022-03-19 10:00:00">2022-03-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/Flutter/">Flutter</a></span></div><div class="content"> Flutter调试问题: SocketException: Failed to create server socket 有段时间没有用flutter，但是一直保持sdk更新。今天用的时候调试报Reason of Flutter error: SocketException: Failed to create server socket (OS Error: Failed to start accept), address = localhost, port = xxxx。 这个问题查了下，先是stackoverflow找到一个解决方案，要ipconfig查本机ip，然后再用实际ip启动： 1flutter run -d chrome --web-port=8080 --web-hostname= *the value of IPv4 Address* 但是没法在Android studio打断点debug。也查到说取消网卡绑定ipv6地址的，不过这个我没试。再试了把网卡ip改为127.0.0.1，也是可以启动的。与AS调试启动的不同只是在于，AS调试用的是localhost。...</div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#content-inner">3</a><a class="extend next" rel="next" href="/page/3/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Stargazer</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">45</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/bigcat26"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/bigcat26" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:bigcat26@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/02/01/2026-02-01-opencode-configuration-guide/" title="Opencode 配置技巧"><img src="/img/opencode.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Opencode 配置技巧"/></a><div class="content"><a class="title" href="/2026/02/01/2026-02-01-opencode-configuration-guide/" title="Opencode 配置技巧">Opencode 配置技巧</a><time datetime="2026-01-31T16:00:00.000Z" title="发表于 2026-02-01 00:00:00">2026-02-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/02/01/2026-02-01-mcp-config/" title="常用的 MCP 配置记录"><img src="/img/mcp-market.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="常用的 MCP 配置记录"/></a><div class="content"><a class="title" href="/2026/02/01/2026-02-01-mcp-config/" title="常用的 MCP 配置记录">常用的 MCP 配置记录</a><time datetime="2026-01-31T16:00:00.000Z" title="发表于 2026-02-01 00:00:00">2026-02-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/06/16/2025-06-16-synology-docker/" title="Synology Docker常用命令以及问题解决"><img src="/img/synology-nas.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Synology Docker常用命令以及问题解决"/></a><div class="content"><a class="title" href="/2025/06/16/2025-06-16-synology-docker/" title="Synology Docker常用命令以及问题解决">Synology Docker常用命令以及问题解决</a><time datetime="2025-06-15T16:00:00.000Z" title="发表于 2025-06-16 00:00:00">2025-06-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/04/21/2025-04-21-mcp-prompts/" title="整理一下mcp和prompts相关的资料"><img src="/img/mcp.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="整理一下mcp和prompts相关的资料"/></a><div class="content"><a class="title" href="/2025/04/21/2025-04-21-mcp-prompts/" title="整理一下mcp和prompts相关的资料">整理一下mcp和prompts相关的资料</a><time datetime="2025-04-20T16:00:00.000Z" title="发表于 2025-04-21 00:00:00">2025-04-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/04/10/2025-04-10-qwen2.5-vl-finetune/" title="微调Qwen2.5 VL-7B-Instruct"><img src="/img/dog.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="微调Qwen2.5 VL-7B-Instruct"/></a><div class="content"><a class="title" href="/2025/04/10/2025-04-10-qwen2.5-vl-finetune/" title="微调Qwen2.5 VL-7B-Instruct">微调Qwen2.5 VL-7B-Instruct</a><time datetime="2025-04-09T16:00:00.000Z" title="发表于 2025-04-10 00:00:00">2025-04-10</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+      <i class="fas fa-angle-right"></i></a>
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/AI/"><span class="card-category-list-name">AI</span><span class="card-category-list-count">2</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/AI/LLM/"><span class="card-category-list-name">LLM</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/AI/LLM/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"><span class="card-category-list-name">开发工具</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/AI/LLM/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/%E6%8F%90%E7%A4%BA%E8%AF%8D/"><span class="card-category-list-name">提示词</span><span class="card-category-list-count">1</span></a></li></ul></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/AI/%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/"><span class="card-category-list-name">模型训练</span><span class="card-category-list-count">1</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Docker/"><span class="card-category-list-name">Docker</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/"><span class="card-category-list-name">技术</span><span class="card-category-list-count">6</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/Android/"><span class="card-category-list-name">Android</span><span class="card-category-list-count">1</span></a></li></ul></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/grpc/" style="font-size: 1.1em; color: #999">grpc</a> <a href="/tags/kotlin/" style="font-size: 1.1em; color: #999">kotlin</a> <a href="/tags/pearson/" style="font-size: 1.1em; color: #999">pearson</a> <a href="/tags/MCP/" style="font-size: 1.1em; color: #999">MCP</a> <a href="/tags/protobuf/" style="font-size: 1.1em; color: #999">protobuf</a> <a href="/tags/c/" style="font-size: 1.1em; color: #999">c++</a> <a href="/tags/android/" style="font-size: 1.3em; color: #99a1ac">android</a> <a href="/tags/ai/" style="font-size: 1.1em; color: #999">ai</a> <a href="/tags/app/" style="font-size: 1.1em; color: #999">app</a> <a href="/tags/covariance/" style="font-size: 1.1em; color: #999">covariance</a> <a href="/tags/finetune/" style="font-size: 1.1em; color: #999">finetune</a> <a href="/tags/design/" style="font-size: 1.1em; color: #999">design</a> <a href="/tags/Synology/" style="font-size: 1.1em; color: #999">Synology</a> <a href="/tags/%E9%85%8D%E7%BD%AE/" style="font-size: 1.1em; color: #999">配置</a> <a href="/tags/stable-diffusion/" style="font-size: 1.1em; color: #999">stable diffusion</a> <a href="/tags/cursor/" style="font-size: 1.1em; color: #999">cursor</a> <a href="/tags/flutter/" style="font-size: 1.1em; color: #999">flutter</a> <a href="/tags/cloud/" style="font-size: 1.1em; color: #999">cloud</a> <a href="/tags/ui/" style="font-size: 1.1em; color: #999">ui</a> <a href="/tags/docker/" style="font-size: 1.1em; color: #999">docker</a> <a href="/tags/gradient-descent/" style="font-size: 1.5em; color: #99a9bf">gradient descent</a> <a href="/tags/yaml/" style="font-size: 1.1em; color: #999">yaml</a> <a href="/tags/pid/" style="font-size: 1.1em; color: #999">pid</a> <a href="/tags/AI%E7%94%BB%E5%9B%BE/" style="font-size: 1.1em; color: #999">AI画图</a> <a href="/tags/%E7%BB%88%E7%AB%AF/" style="font-size: 1.1em; color: #999">终端</a> <a href="/tags/kmeans/" style="font-size: 1.1em; color: #999">kmeans</a> <a href="/tags/least-square-method/" style="font-size: 1.1em; color: #999">least square method</a> <a href="/tags/yolo/" style="font-size: 1.1em; color: #999">yolo</a> <a href="/tags/debug/" style="font-size: 1.1em; color: #999">debug</a> <a href="/tags/opencode/" style="font-size: 1.1em; color: #999">opencode</a> <a href="/tags/%E7%AC%94%E8%AE%B0%E6%9C%AC/" style="font-size: 1.1em; color: #999">笔记本</a> <a href="/tags/zsh/" style="font-size: 1.1em; color: #999">zsh</a> <a href="/tags/kalman-filter/" style="font-size: 1.1em; color: #999">kalman filter</a> <a href="/tags/logistic-regression/" style="font-size: 1.1em; color: #999">logistic regression</a> <a href="/tags/prompts/" style="font-size: 1.1em; color: #999">prompts</a> <a href="/tags/mooc/" style="font-size: 1.1em; color: #999">mooc</a> <a href="/tags/pytorch/" style="font-size: 1.1em; color: #999">pytorch</a> <a href="/tags/control-system/" style="font-size: 1.3em; color: #99a1ac">control system</a> <a href="/tags/LLM/" style="font-size: 1.3em; color: #99a1ac">LLM</a> <a href="/tags/mcp/" style="font-size: 1.1em; color: #999">mcp</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      <a class="card-more-btn" href="/archives/"
+            title="查看更多">
+            <i class="fas fa-angle-right"></i>
+          </a>
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/02/">
+            <span class="card-archive-list-date">
+              二月 2026
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/06/">
+            <span class="card-archive-list-date">
+              六月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/04/">
+            <span class="card-archive-list-date">
+              四月 2025
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/03/">
+            <span class="card-archive-list-date">
+              三月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/02/">
+            <span class="card-archive-list-date">
+              二月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2023/08/">
+            <span class="card-archive-list-date">
+              八月 2023
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2023/04/">
+            <span class="card-archive-list-date">
+              四月 2023
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2023/02/">
+            <span class="card-archive-list-date">
+              二月 2023
+            </span>
+            <span class="card-archive-list-count">4</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">25</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-02-05T09:51:42.231Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Stargazer</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
