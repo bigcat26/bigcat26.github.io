@@ -4245,9 +4245,9 @@ uc.micro@^1.0.1, uc.micro@^1.0.5:
   integrity sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==
 
 undici@^7.19.0:
-  version "7.19.2"
-  resolved "https://registry.npmjs.org/undici/-/undici-7.19.2.tgz"
-  integrity sha512-4VQSpGEGsWzk0VYxyB/wVX/Q7qf9t5znLRgs0dzszr9w9Fej/8RVNQ+S20vdXSAyra/bJ7ZQfGv6ZMj7UEbzSg==
+  version "7.24.1"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-7.24.1.tgz#3fd0fe40e67388860810ad3275f9a23b322de650"
+  integrity sha512-5xoBibbmnjlcR3jdqtY2Lnx7WbrD/tHlT01TmvqZUFVc9Q1w4+j5hbnapTqbcXITMH1ovjq/W7BkqBilHiVAaA==
 
 union-value@^1.0.0:
   version "1.0.1"
